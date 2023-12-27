@@ -1,12 +1,14 @@
 .attribution {
-    display: flex;
-    justify-content: center;
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: #D8CBFF;
 }
 
 main {
@@ -17,11 +19,9 @@ main {
 
 }
 
-#summary {
-    margin: 20px 20px;
-}
-
 #result {
+    text-align: center;
+    box-shadow: 15em 0em white;
     border-radius: 50px;
     background-color: #6340fc;
     height: 35em;
@@ -31,18 +31,19 @@ main {
     justify-content: center;
     width: 20em;
 }
-.result-motivation{
+
+.result-motivation {
     color: #D8CBFF;
     text-align: center;
 }
 
-#result-score-1{
+#result-score-1 {
     font-size: 2em;
     color: white;
     font-weight: bolder;
 }
 
-#result-score-2{
+#result-score-2 {
     color: #D8CBFF;
     font-size: medium;
     margin-top: -25px;
@@ -61,4 +62,69 @@ main {
     color: #D8CBFF;
     font-weight: bolder;
     font-size: 30px;
+}
+
+#summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15em;
+}
+
+#Reaction {
+    background-color: red;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+#Memory {
+    background-color: orange;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+#Verbal {
+    background-color: lightgreen;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+#Visual {
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+#btn-continue {
+    margin-top: 5em;
+    border-radius: 20px;
+}
+
+#span-reaction {
+
+}
+
+.score {
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: right;
+}
+
+.allpoints {
+    color: lightgray;
+    font-weight: bolder;
+    font-size: larger;
 }
