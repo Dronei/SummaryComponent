@@ -9,6 +9,7 @@
 
 body {
     background-color: #D8CBFF;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 main {
@@ -21,10 +22,10 @@ main {
 
 #result {
     text-align: center;
-    box-shadow: 15em 0em white;
+    box-shadow: 14em 0em white;
     border-radius: 50px;
     background-color: #6340fc;
-    height: 35em;
+    height: 30em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,22 +33,21 @@ main {
     width: 20em;
 }
 
-.result-motivation {
+#result-motivation {
     color: #D8CBFF;
     text-align: center;
 }
 
 #result-score-1 {
-    font-size: 2em;
+    font-size: 4em;
     color: white;
     font-weight: bolder;
 }
 
 #result-score-2 {
-    color: #D8CBFF;
+    color: #d8cbff69;
     font-size: medium;
-    margin-top: -25px;
-}
+ }
 
 #result-score {
     width: 8em;
@@ -55,12 +55,15 @@ main {
     text-align: center;
     border-radius: 100%;
     background-color: #4A23CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #result-caption {
     text-align: center;
     color: #D8CBFF;
-    font-weight: bolder;
     font-size: 30px;
 }
 
@@ -68,52 +71,66 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 15em;
+    padding: 0 20px;
+    width: 12em;
 }
 
 #Reaction {
+    height: 2em;
     background-color: rgba(255, 0, 0, 0.400);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 5px;
 }
 
 #Memory {
+    height: 2em;
+    margin-top: 20px;
     background-color: rgba(255, 166, 0, 0.400);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 5px;
 }
 
 #Verbal {
+    height: 2em;
+    margin-top: 20px;
     background-color: rgba(144, 238, 144, 0.400);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 5px;
 }
 
 #Visual {
+    height: 2em;
+    margin-top: 20px;
     background-color: rgba(137, 43, 226, 0.400);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 5px;
 }
 
 #btn-continue {
-    margin-top: 5em;
+    background-color: #4e495e;
+    color: white;
+    margin-top: 2em;
     border-radius: 20px;
+    text-align: center;
+    height: 3em;
+
 }
 
-#span-reaction {
-
+#btn-continue:hover{
+    background-color: #6340fc;
+    border-color: #6340fc;
 }
 
 .score {
@@ -124,7 +141,53 @@ main {
 }
 
 .allpoints {
-    color: lightgray;
+    color: rgba(0, 0, 0, 0.500);
     font-weight: bolder;
     font-size: larger;
+}
+
+#summary-caption{
+    font-size: x-large;
+    text-align: left;
+}
+
+#result-motivation-caption{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #result {
+        text-align: center;
+        box-shadow: 0em 25em white;
+        border-radius: 50px;
+        background-color: #6340fc;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20em;
+    }
+
+    #summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+        width: 15em;
+    }
+
+    .attribution {
+     margin-top: 3em;
+     
+    }
 }
